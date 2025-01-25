@@ -106,5 +106,5 @@ jobs:
                 dotnet nuget push $file \
                  --api-key "${{ secrets.GIT_PAT }}" \
                  --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json \
-                 --skip-duplicate
+                 --skip-duplicate --verbosity detailed
           }
