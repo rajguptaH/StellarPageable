@@ -3,7 +3,7 @@ name: Publish to NuGet
 on:
   push:
     branches:
-      - main # Trigger on push to the main branch
+      - main
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.0' # Use .NET 8.0
+        dotnet-version: '8.0'
 
     - name: Restore dependencies
       run: dotnet restore
@@ -25,7 +25,14 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Pack the library
-      run: dotnet pack --configuration Release --no-build --output ./nupkgs
+      run: dotnet pack --configuration Release --output ./nupkgs
+
+    - name: Check if package exists
+      run: |
+        if [ ! -f ./nupkgs/*.nupkg ]; then
+          echo "Error: No .nupkg file found in ./nupkgs/."
+          exit 1
+        fi
 
     - name: Publish package to NuGet
       run: dotnet nuget push ./nupkgs/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
