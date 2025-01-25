@@ -18,6 +18,7 @@
     <RepositoryUrl>https://github.com/rajguptaH/StellarPageable</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/rajguptaH/StellarPageable</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
     <!--<PackageIcon>icon.png</PackageIcon> --><!-- Optional: Add an icon to your project -->
   </PropertyGroup>
 
