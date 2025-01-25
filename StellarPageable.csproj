@@ -4,6 +4,21 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>StellarPageable</PackageId>
+    <Version>8.0.0</Version>
+    <Authors>Raj Narayan Gupta</Authors>
+    <Company>Fixelr Innovatives Private Limited</Company>
+    <Description>
+      The StellarPageable library is a C# library designed to simplify data pagination and filtering for applications leveraging Entity Framework Core. 
+      It provides a reusable, generic solution for implementing paginated and filtered queryable objects.
+    </Description>
+    <PackageTags>pagination;filtering;EntityFramework;CSharp;library</PackageTags>
+    <RepositoryUrl>https://github.com/rajguptaH/StellarPageable</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/rajguptaH/StellarPageable</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon> <!-- Optional: Add an icon to your project -->
   </PropertyGroup>
 
 </Project>
