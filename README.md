@@ -98,7 +98,7 @@ public async Task<IActionResult> GetUsers([FromQuery] PaginatedRequest request)
 ## Contact
 
 For questions or feedback, feel free to reach out:
-- **Email**: [raj@fixelr.in](mailto:raj@fixelr.in)
+- **Email**: [rajnarayan.guptanet@gmail.com](mailto:rajnarayan.guptanet@gmail.com)
 - **Instagram**: [@raj__rr](https://instagram.com/raj__rr)
 
 ---
